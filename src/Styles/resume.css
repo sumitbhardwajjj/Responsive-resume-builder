@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-resume{
+  position: relative;
+  max-width: 1210px;
+  width: auto;
+  padding: 30px;
+  margin: 20px 30px 30px;
+  background-color: #fff;
+  box-shadow: 10px 10px  10px 10px rgb(156, 155, 155);
+  font-family: sans-serif;
+}
+p{
+  padding: 5px;
+}
+.heading{
+ text-align: center;
+
+}
+.personal{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size: 18px;
+   
+}
+
+.educational{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.work{
+ display: flex;
+ justify-content: space-evenly;
+ padding: 30px;
+  font-size: 18px;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.save{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+@media(max-width:550px){
+  .personal{
+    width: calc(100% /2 - 15px);
+    flex-direction: column;
+  }
+  .educational{
+    width: calc(100% /2 - 15px);
+    flex-direction: column;
+  }
+  .work{
+    width: calc(100% /2 - 15px);
+    flex-direction: column;
+  }
+  .skill{
+    width: calc(100% /2 - 15px);
+    flex-direction: column;
+  }
+}

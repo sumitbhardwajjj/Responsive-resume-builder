@@ -1,0 +1,30 @@
+.header{
+    height: 300px;
+    width: auto;
+    overflow: hidden;
+}
+
+li{
+    margin: 20px;
+    padding: 10px; 
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    list-style: none;
+}
+li:hover{
+    scale: 115%;
+    background-color: rgb(193, 197, 201);
+}
+ :link{
+    text-decoration: none;
+ }
+
+li .active {
+ color: rgb(4, 0, 255);
+ font-weight: bolder;
+
+}
