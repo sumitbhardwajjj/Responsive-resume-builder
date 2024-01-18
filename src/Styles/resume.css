@@ -1,74 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset some default styles and add a simple styling */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
 }
-.form-resume{
-  position: relative;
-  max-width: 1210px;
-  width: auto;
-  padding: 30px;
-  margin: 20px 30px 30px;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Style for the Save button */
+.save {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.save button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save button:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Style for the entire form */
+.form-resume {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style for the main container inside the form */
+.form-resume > div {
   background-color: #fff;
-  box-shadow: 10px 10px  10px 10px rgb(156, 155, 155);
-  font-family: sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
-p{
-  padding: 5px;
-}
-.heading{
- text-align: center;
 
+/* Style for the heading */
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
-.personal{
+
+/* Style for personal information */
+.personal {
   display: flex;
-  justify-content: space-evenly;
-  padding: 30px;
-  font-size: 18px;
-   
+  justify-content: space-between;
 }
 
-.educational{
-  display: flex;
-  justify-content: space-evenly;
-  padding: 30px;
-  font-size: 18px;
+.personal h2 {
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.work{
- display: flex;
- justify-content: space-evenly;
- padding: 30px;
-  font-size: 18px;
+.personal p {
+  color: #666;
 }
 
-.skill{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
-    font-size: 18px;
+/* Style for educational, work, and skill details */
+.educational, .work, .skill {
+  margin-top: 20px;
 }
 
-.save{
-  display: flex;
-  justify-content: center;
- 
+/* Style for educational and work detail headings */
+.educational h3, .work h3, .skill h3 {
+  color: #333;
+  margin-bottom: 10px;
 }
 
-@media(max-width:550px){
-  .personal{
-    width: calc(100% /2 - 15px);
-    flex-direction: column;
-  }
-  .educational{
-    width: calc(100% /2 - 15px);
-    flex-direction: column;
-  }
-  .work{
-    width: calc(100% /2 - 15px);
-    flex-direction: column;
-  }
-  .skill{
-    width: calc(100% /2 - 15px);
-    flex-direction: column;
+/* Style for individual detail items */
+.educational div, .work div, .skill div {
+  margin-bottom: 10px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .form-resume > div {
+    padding: 10px;
   }
 }

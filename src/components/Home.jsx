@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-    <div>
+    <div className="wrapper">
     <div className="temp">
         <div>
           <h1>Welcome To Portfolio.com</h1>

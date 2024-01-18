@@ -1,26 +1,52 @@
-body{
+/* Reset some default styles and add a simple styling */
+body, h1, p {
     margin: 0;
     padding: 0;
-    background-color: rgb(188, 201, 241);
-}
-
-
-.temp h1{
-    text-align: center;
-    padding: 20px;
-}
-
-.temp p{
-    padding: 30px;
-    font-size: 18px;
-}
-
-.temp button{
-    width: 150px;
-    height: 40px;
-}
-
-.build{
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .wrapper {
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .temp {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .build button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .build button:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+  }
+  
